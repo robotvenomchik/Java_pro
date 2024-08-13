@@ -10,17 +10,9 @@ public class Main {
         double kgs =5;
         double pounds= convKgsToPounds(kgs);
         System.out.println("Result: " + pounds + " pounds.");
-
-        double pnds =12;
-        double kilos= convPoundsToKgs(pnds);
-        System.out.println("Result: " + kilos+ " kgs.");
     }
 
     private static double convKgsToPounds(double kgs){
         return kgs* CONV_K;
-    }
-
-    private static double convPoundsToKgs(double pnds){
-        return pnds / CONV_K;
     }
 }
