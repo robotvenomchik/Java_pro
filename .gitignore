@@ -14,7 +14,8 @@ src/Trash1.java
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
-
+/.idea
+.iml
 
 ### NetBeans ###
 /nbproject/private/
