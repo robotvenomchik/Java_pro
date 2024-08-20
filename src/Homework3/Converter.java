@@ -1,2 +1,4 @@
-package Homework3;public class converter {
+package Homework3;
+
+public class Converter {
 }
