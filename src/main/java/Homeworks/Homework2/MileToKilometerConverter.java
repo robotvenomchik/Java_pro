@@ -1,4 +1,4 @@
-package Homework2;
+package main.java.Homework2;
 
 public class MileToKilometerConverter {
     public double convertMilesToKilometers(double miles) {

@@ -1,4 +1,4 @@
-package Homework3;
+package Homeworks.Homework3;
 
 public class Main {
     Converter converter= new Converter();

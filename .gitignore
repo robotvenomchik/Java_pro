@@ -2,7 +2,7 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-src/Trash1.java
+src/main/java/Trash1.java
 ### Eclipse ###
 .apt_generated
 .classpath
