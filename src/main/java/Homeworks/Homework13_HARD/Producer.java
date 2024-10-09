@@ -17,10 +17,8 @@ public class Producer implements Runnable {
         try {
             for (int num : numbers) {
                 System.out.println("Initial value is " + num);
-                // Передаємо значення в потік-споживач
                 exchanger.exchange(num);
             }
-            // Передаємо нуль для завершення
             exchanger.exchange(0);
         } catch (InterruptedException e) {
             e.printStackTrace();

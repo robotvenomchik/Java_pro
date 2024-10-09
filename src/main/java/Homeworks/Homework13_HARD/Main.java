@@ -10,11 +10,9 @@ public class Main {
         DataHandler dataHandler = new DataHandler();
         Exchanger<Integer> exchanger = new Exchanger<>();
 
-        // Створюємо два потоки для обробки даних
         Thread producer = new Thread(new Producer(numbers, exchanger));
         Thread consumer = new Thread(new Consumer(dataHandler, exchanger));
 
-        // Запускаємо потоки
         producer.start();
         consumer.start();
 
