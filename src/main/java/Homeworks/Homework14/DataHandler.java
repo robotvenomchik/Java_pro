@@ -28,17 +28,14 @@ public class DataHandler {
 
     // Метод для пошуку імен за частковим співпадінням
     public String searchByPartialName(List<String> list, String query) {
-        // Фільтрація списку на основі пошукового запиту
         List<String> result = list.stream()
                 .filter(name -> name.toLowerCase().contains(query.toLowerCase()))
                 .collect(Collectors.toList());
 
-        // Якщо немає результатів, повертаємо повідомлення
         if (result.isEmpty()) {
             return "No matches found for query: " + query;
         }
 
-        // Формування результату
         StringBuilder sb = new StringBuilder();
         sb.append("Search results for query: ").append(query).append("\n");
         AtomicInteger count = new AtomicInteger(1);
