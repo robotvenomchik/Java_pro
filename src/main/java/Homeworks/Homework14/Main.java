@@ -9,7 +9,6 @@ public class Main {
 
         // Виведення нумерованого списку імен
         uiOperator.getOutput(handler.formListOutput(repository.getData()));
-
         // Виведення імені за індексом
         uiOperator.getOutput(handler.formOutput(repository.getData(), 2));
 
