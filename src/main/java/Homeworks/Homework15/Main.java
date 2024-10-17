@@ -6,7 +6,6 @@ public class Main {
         DataHandler handler = new DataHandler();
         UIOperator uiOperator = new UIOperator();
 
-        // Створюємо потоки
         Thread allNamesThread = new Thread(() -> uiOperator.getOutput(handler.getAll()));
         Thread getByIdThread = new Thread(() -> {
             uiOperator.getOutput(handler.getById(172));
@@ -14,12 +13,10 @@ public class Main {
             uiOperator.getOutput(handler.getById(122));
         });
 
-        // Запускаємо потоки
         allNamesThread.start();
         getByIdThread.start();
 
         try {
-            // Очікуємо завершення роботи потоків
             allNamesThread.join();
             getByIdThread.join();
         } catch (InterruptedException e) {
