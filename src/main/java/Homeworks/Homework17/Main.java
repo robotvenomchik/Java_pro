@@ -25,5 +25,16 @@ public class Main {
         maxAveragePriceCategory.ifPresent(entry ->
                 System.out.println("Категорія з найвищою середньою ціною: " + entry.getKey() + " - " + entry.getValue())
         );
+        Map<Boolean, List<Product>> expensiveProducts = products.stream()
+                .collect(Collectors.partitioningBy(p -> p.getPrice() > 100));
+
+        String productNames = products.stream()
+                .map(Product::getName)
+                .collect(Collectors.joining(", "));
+
+        System.out.println("Дорогі продукти: " + expensiveProducts.get(true));
+        System.out.println("Назви продуктів: " + productNames);
+
+
     }
 }
