@@ -5,7 +5,6 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-// Анотація MethodInfo
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 @interface MethodInfo {
@@ -14,7 +13,6 @@ import java.lang.annotation.Target;
     String description();
 }
 
-// Анотація Author
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 @interface Author {
