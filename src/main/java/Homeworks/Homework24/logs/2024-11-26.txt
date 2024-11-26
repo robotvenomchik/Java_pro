@@ -1,0 +1,10 @@
+[2024-11-26 21:46:19] This is the first log message
+[2024-11-26 21:46:19] Another log message for today
+[2024-11-26 21:46:20] This is a log message after some time
+[2024-11-26 21:46:20] Test logger1
+[2024-11-26 21:46:20] Test logger2
+[2024-11-26 22:22:04] This is the first log message
+[2024-11-26 22:22:04] Another log message for today
+[2024-11-26 22:22:05] This is a log message after some time
+[2024-11-26 22:22:05] Test logger1
+[2024-11-26 22:22:05] Test logger2
