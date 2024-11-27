@@ -3,3 +3,13 @@
 [2024-11-27 10:59:44] This is a log message after some time
 [2024-11-27 10:59:44] Test logger1
 [2024-11-27 10:59:44] Test logger2
+[2024-11-27 17:43:12] This is the first log message
+[2024-11-27 17:43:12] Another log message for today
+[2024-11-27 17:43:13] This is a log message after some time
+[2024-11-27 17:43:13] Test logger1
+[2024-11-27 17:43:13] Test logger2
+[2024-11-27 17:43:53] This is the first log message
+[2024-11-27 17:43:53] Another log message for today
+[2024-11-27 17:43:54] This is a log message after some time
+[2024-11-27 17:43:54] Test logger1
+[2024-11-27 17:43:54] Test logger2
