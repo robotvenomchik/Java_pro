@@ -13,4 +13,10 @@ public class Car implements Transport {
     public void move() {
         System.out.println("Car is driving at " + speed + " km/h with color " + color + ".");
     }
+
+    @Override
+    public void refill() {
+        System.out.println("Car is reffiling....");
+
+    }
 }

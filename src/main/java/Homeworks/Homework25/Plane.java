@@ -11,4 +11,10 @@ public class Plane implements Transport {
     public void move() {
         System.out.println("Plane is flying at altitude " + altitude + " meters.");
     }
+
+    @Override
+    public void refill() {
+        System.out.println("Plane is reffiling....");
+
+    }
 }

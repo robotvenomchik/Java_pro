@@ -15,5 +15,10 @@ class TransportManager {
             transport.move();
         }
     }
+    public void refillAll() {
+        for (Transport transport : transports) {
+            transport.refill();
+        }
+    }
 }
 

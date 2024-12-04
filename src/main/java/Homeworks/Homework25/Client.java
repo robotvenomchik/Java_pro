@@ -1,14 +1,19 @@
 package Homeworks.Homework25;
 
 public class Client {
-    void run(){
-        CarFactory carFactory = new CarFactory();
-        PlaneFactory planeFactory = new PlaneFactory();
-        Transport car = carFactory.createTransport();
-        Transport plane = planeFactory.createTransport();
-        car.move();
-        plane.move();
-    };
+    public void run() {
+        TransportFactory carFactory = new CarFactory("Red", 120);
+        TransportFactory planeFactory = new PlaneFactory(10000);
+
+        SingletonCarFactory singletonCarFactory = SingletonCarFactory.getInstance("Blue", 100);
+
+        TransportManager manager = new TransportManager();
+        manager.addTransport(carFactory.createTransport());
+        manager.addTransport(planeFactory.createTransport());
+        manager.addTransport(singletonCarFactory.createTransport());
+
+        manager.moveAll();
+    }
 
     public static void main(String[] args) {
         Client client= new Client();
