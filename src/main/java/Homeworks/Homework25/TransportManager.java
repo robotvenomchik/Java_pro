@@ -1,4 +1,19 @@
 package Homeworks.Homework25;
 
-public class TransportManager {
+import java.util.ArrayList;
+import java.util.List;
+
+class TransportManager {
+    private List<Transport> transports = new ArrayList<>();
+
+    public void addTransport(Transport transport) {
+        transports.add(transport);
+    }
+
+    public void moveAll() {
+        for (Transport transport : transports) {
+            transport.move();
+        }
+    }
 }
+
